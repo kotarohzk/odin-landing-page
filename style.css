@@ -55,10 +55,146 @@ li > a::before {
   bottom: 0;
   left: 0;
   transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 li > a:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+
+.hero-img > img {
+  width: 100%;
+}
+
+.hero-img {
+  flex-basis: 500px;
+}
+
+.hero-text {
+  flex-basis: 500px;
+}
+
+.hero-text > p {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fffcfb;
+  line-height: 1.2 em;
+}
+
+.hero button,
+.card button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fffcfb;
+  border: 1px solid #fffcfb;
+  transform: scale(1);
+  transition: transform 0.5s ease-out;
+  margin-top: 10px;
+}
+
+.hero button:hover {
+  color: #fda16c;
+  background-color: #fffcfb;
+  border: 1px solid #fffcfb;
+  transform: scale(1.1);
+}
+
+.card button {
+  color: currentColor;
+  border-color: currentColor;
+  border-radius: 30px;
+  font-size: 0.8rem;
+}
+
+.card button:hover {
+  transform: scale(1.1);
+}
+
+.info {
+  background-color: #fffcfb;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.info-cards {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 300px;
+  flex-grow: 1;
+  text-align: center;
+  gap: 2rem;
+  color: #fffcfb;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.card-heading img {
+  width: 20px;
+}
+
+.card-body {
+  min-height: 200px;
+}
+
+.card-desc {
+  flex-grow: 1;
+}
+
+.card-desc p:nth-child(1) {
+  font-family: "Arvo", serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.card-desc p ~ p {
+  font-size: 0.9rem;
+}
+
+.green {
+  background-color: #00784d;
+}
+
+.red {
+  background-color: #e1635f;
+}
+
+.beige {
+  background-color: #fcd8c2;
+  color: #000;
+}
+
+.testimonial-sect {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

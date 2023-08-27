@@ -90,7 +90,8 @@ li > a:hover::before {
 }
 
 .hero button,
-.card button {
+.card button,
+.cta-right button {
   font-family: inherit;
   font-size: 1rem;
   padding: 10px 20px;
@@ -117,7 +118,8 @@ li > a:hover::before {
   font-size: 0.8rem;
 }
 
-.card button:hover {
+.card button:hover,
+.cta-right button:hover {
   transform: scale(1.1);
 }
 
@@ -193,8 +195,52 @@ li > a:hover::before {
 }
 
 .testimonial-sect {
-  padding: 50px 0;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #08415c;
+  color: #fffcfb;
+}
+
+.testimonial {
+  margin-top: 50px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.credit {
+  align-self: flex-end;
+}
+
+.credit::before {
+  content: "-";
+}
+
+.cta {
+  padding: 100px 0;
+}
+
+.cta-box {
+  display: flex;
+  background-color: #08415c;
+  padding: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+  color: #fffcfb;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-left div:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer {
+  padding: 15px;
+  text-align: center;
+  color: #fffcfb;
 }

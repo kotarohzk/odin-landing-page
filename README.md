@@ -9,6 +9,10 @@ This is the second project of [The Odin Project](https://www.theodinproject.com/
 - using justify-content and align-items to control space distribution and alignment along main and cross axes
 - using psuedo-element, positioning and transform to create an animated underline when links are hovered over
 
+## Live Preview
+
+Check out the live preview of the project [here](https://kotarohzk.github.io/odin-landing-page/).
+
 ## Credit
 
 All the illustrations used in this project are from [DrawKit](https://www.drawkit.com/).
